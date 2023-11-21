@@ -104,12 +104,13 @@
                     <field name="meeting_count" widget="statinfo" />
                 </button>
             </button>
-            <xpath
-                expr="//field[@name='task_count']/parent::button"
-                position="attributes"
-            >
-                <attribute name="name">%(act_project_tasks)d</attribute>
-            </xpath>
+            <!-- TODO: @Review: Do we need this change? in v16 we dont have the button task_count anymore-->
+<!--            <xpath-->
+<!--                expr="//field[@name='task_count']/parent::button"-->
+<!--                position="attributes"-->
+<!--            >-->
+<!--                <attribute name="name">%(act_project_tasks)d</attribute>-->
+<!--            </xpath>-->
             <field name="partner_id" position="after">
                 <field name="manhours" />
             </field>
